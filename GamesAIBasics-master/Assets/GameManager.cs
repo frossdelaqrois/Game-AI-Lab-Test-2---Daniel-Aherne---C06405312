@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour {
 		Bot.AddComponent<MeshFilter> ();
 		Bot.AddComponent<StateMachine>();
 		Bot.AddComponent<SteeringBehaviours>();
-		Debug.DrawLine(transform.position, transform.position + transform.forward * 10.0f, Color.red);
+
+		float BotAmmo = 10f;
+
 	
         GameObject leader = GameObject.FindGameObjectWithTag("leader");
         GameObject teaser = GameObject.FindGameObjectWithTag("teaser");
